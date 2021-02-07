@@ -53,16 +53,7 @@ const renderFoodInfo = food => {
       <p>${food.strMeasure8} ${food.strIngredient8}</p>
       <p>${food.strMeasure9} ${food.strIngredient9}</p>
       <p>${food.strMeasure10} ${food.strIngredient10}</p>
-      <p>${food.strMeasure11} ${food.strIngredient11}</p>
-      <p>${food.strMeasure12} ${food.strIngredient12}</p>
-      <p>${food.strMeasure13} ${food.strIngredient13}</p>
-      <p>${food.strMeasure14} ${food.strIngredient14}</p>
-      <p>${food.strMeasure15} ${food.strIngredient15}</p>
-      <p>${food.strMeasure16} ${food.strIngredient16}</p>
-      <p>${food.strMeasure17} ${food.strIngredient17}</p>
-      <p>${food.strMeasure18} ${food.strIngredient18}</p>
-      <p>${food.strMeasure19} ${food.strIngredient19}</p>
-      <p>${food.strMeasure20} ${food.strIngredient20}</p> 
+     
   `
   foodDetailDiv.innerHTML = foodDetail;
 }

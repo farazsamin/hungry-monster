@@ -42,7 +42,7 @@ const renderFoodInfo = food => {
   const foodDetail = `
       <img src="${food.strMealThumb}">
       <h3>${food.strMeal}</h3>
-      <h5>Ingregients : </h5>
+      <h5>Ingredients : </h5>
       <p>${food.strMeasure1} ${food.strIngredient1}</p>
       <p>${food.strMeasure2} ${food.strIngredient2}</p>
       <p>${food.strMeasure3} ${food.strIngredient3}</p>

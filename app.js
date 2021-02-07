@@ -7,12 +7,21 @@ document.getElementById("search").addEventListener("click", function () {
       displayFoods(data.meals);
     })
     .catch(err => {
-      alert("No Result Found");
+      const foodsDiv = document.getElementById("foods");
+      foodsDiv.innerText = "";
+      const foodDiv = document.createElement('div');
+      const foodInfo = `
+         <h1>No Result Found</h1>   
+    `
+    foodDiv.innerHTML = foodInfo;
+    foodsDiv.appendChild(foodDiv);
+
     });
 });
 
 const displayFoods = foods => {
   const foodsDiv = document.getElementById("foods");
+  foodsDiv.innerText = "";
 
   foods.forEach(food => {
     const foodDiv = document.createElement('div');
@@ -39,6 +48,7 @@ const displayFoodDetail = id => {
 
 const renderFoodInfo = food => {
   const foodDetailDiv = document.getElementById('foodDetail');
+  foodDetailDiv.innerText = "";
   const foodDetail = `
       <img src="${food.strMealThumb}">
       <h3>${food.strMeal}</h3>

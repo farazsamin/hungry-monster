@@ -1,0 +1,25 @@
+.food{
+    border: 1px solid grey;
+    border-radius: 2%;
+    width : 420px;
+    text-align: center;
+}
+.food-img{
+    width: 100%;
+}
+.food-name{
+    font-size: 20px;
+    font-weight: 500;
+}
+#foods{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin-left: 40px;
+}
+#foodDetail{
+    text-align: center;
+}
+#foodDetail img{
+    width: 350px;
+}
